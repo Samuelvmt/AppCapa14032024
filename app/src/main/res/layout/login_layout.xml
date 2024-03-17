@@ -8,44 +8,69 @@
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@drawable/Helmet" />
-
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/baseline_person"
-        android:hint="@string/insira_o_nome_do_usu_rio"
-        android:inputType="textPersonName"
-        android:maxLength="50" />
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawableStart="@drawable/baseline_audiotrack"
-        android:hint="@string/insira_sua_senha"
-        android:inputType="textPersonName"
-        android:maxLength="50" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:src="@drawable/helmet" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Não possui cadastro? Clique aqui." />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/baseline_person"
+            android:hint="@string/insira_o_nome_do_usu_rio"
+            android:inputType="textPersonName"
+            android:maxLenght="50"
+            android:maxLength="50" />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableStart="@drawable/baseline_audiotrack"
+            android:hint="@string/insira_sua_senha"
+            android:inputType="textPersonName"
+            android:maxLenght="50"
+            android:maxLength="50" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/entrar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/n_o_possui_cadastro_clique_aqui" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/sair" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="@string/entrar"
 
+                />
 
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:text="@string/sair" />
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
 
